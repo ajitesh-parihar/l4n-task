@@ -29,7 +29,9 @@ export const Homepage = () => {
     addData(inputFields);
     setInputFields([{ text: "" }]);
   };
-
+  if (error) {
+    console.log(error);
+  }
   return (
     <div className="container">
       {isLoading && <h2>"Loading..."</h2>}
